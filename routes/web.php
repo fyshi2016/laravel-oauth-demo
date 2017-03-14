@@ -12,12 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/oauth', function () {
     return view('oauth');
 });
+
+Route::get('/public_api', function () {
+    return ["result" => "This is a public api."];
+});
+
+Route::get('/need_token_api', function () {
+    return ["result" => "The access token works."];
+})->middleware('auth:api');
 
 Auth::routes();
 
