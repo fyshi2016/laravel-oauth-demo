@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('oauth');
-});
+})->middleware('auth');
 
 Route::get('/public_api', function () {
     return ["result" => "This is a public api."];
