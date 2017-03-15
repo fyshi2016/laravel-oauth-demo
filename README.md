@@ -29,9 +29,11 @@ php artisan install:passport
 php artisan serve --host=0.0.0.0 --port=8000
 ```
 
+Web 服务启动后，访问 `http://host-or-ip:8000` ，需要注册一个用户并登陆后才能管理、添加 OAuth 客户端。
+
 ## 路由
 
-`routes/web.php` 已事先定义了几个路由，包括两个测试的 API ，详细说明如下：
+`routes/web.php` 已事先定义了几个路由，包括两个测试的 API ，说明如下：
 
 |路由|认证方式|说明|
 |---|---|---|
