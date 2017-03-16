@@ -44,3 +44,7 @@ Web 服务启动后，访问 `http://host-or-ip:8000` ，需要注册一个用�
 
 如果要给自定义的路由启用 `OAuth` 认证，只需调用中间件 `middleware('auth:api')` 即可。
 
+## 测试客户端
+
+可以用这个小客户端测试一下你的 OAuth 服务：
+https://github.com/joy2fun/oauth-client
