@@ -21,7 +21,7 @@ OAuth 需要存储，我们使用 MySQL 创建一个数据库，名为：`oauth`
 初始化数据库并安装 Passport ：
 ```sh
 php artisan migrate
-php artisan install:passport
+php artisan passport:install
 ```
 
 启动 Web 服务：
